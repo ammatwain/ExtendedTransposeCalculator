@@ -9,7 +9,7 @@ module.exports = merge(common, {
     output: {
         filename: '[name].min.js',
         path: path.resolve(__dirname, 'build'),
-        library: 'opensheetmusicdisplay',
+        library: 'ExtendedTransposeCalculator',
         libraryTarget: 'umd'
     },
     mode: 'production',

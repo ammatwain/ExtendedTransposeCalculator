@@ -10,7 +10,7 @@ module.exports = merge(common, {
             STATIC_FILES_SUBFOLDER: false, // Set to other directory if NOT using webpack-dev-server
             DEBUG: false,
             OSMD_DEBUG_CONTROLS: true, // unfortunately, cross-env doesn't seem enough to set this in the demo when using npm start
-            OSMD_DEMO_TITLE: 'OpenSheetMusicDisplay Demo (Developer)',
+            OSMD_DEMO_TITLE: 'ExtendedTransposeCalculator Demo (Developer)',
             DRAW_BOUNDING_BOX_ELEMENT: false //  Specifies the element to draw bounding boxes for (e.g. 'GraphicalLabels'). If 'all', bounding boxes are drawn for all elements.
         })
     ]

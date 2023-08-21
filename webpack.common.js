@@ -4,8 +4,8 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: {
-        opensheetmusicdisplay: './src/index.ts', // Main index (OpenSheetMusicDisplay and other classes)
-        demo: './demo/index.ts' // Demo index
+        ExtendedTransposeCalculator: './src/index.ts', // Main index (OpenSheetMusicDisplay and other classes)
+        ExtendedTransposeCalculatorDemo: './demo/index.ts' // Demo index
     },
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -48,7 +48,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'demo/index.html',
             favicon: 'demo/favicon.ico',
-            title: 'OpenSheetMusicDisplay Demo'
+            title: 'ExtendedTransposeCalculator Demo'
         })
     ],
     devServer: {
@@ -59,5 +59,8 @@ module.exports = {
         ],
         port: 8000,
         compress: false
-    }
+    },
+    externals: {
+        opensheetmusicdisplay: 'opensheetmusicdisplay',
+    },
 }
