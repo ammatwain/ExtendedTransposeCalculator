@@ -1,0 +1,76 @@
+{
+  "name": "ExtendedTransposeCalculator",
+  "version": "1.8.2",
+  "description": "Extended Transpose Calculator Plugin for OpenSheetMusicDisplay",
+  "main": "build/opensheetmusicdisplay.min.js",
+  "types": "build/dist/src/index.d.ts",
+  "scripts": {
+    "docs": "typedoc --out ./build/docs --name ExtendedTransposeCalculator ./src",
+    "eslint": "eslint -c .eslintrc.js --ext .ts .",
+    "lint": "npm run eslint",
+    "test": "",
+    "build": "npm-run-all lint build:webpack",
+    "build:webpack": "webpack --progress --config webpack.prod.js",
+    "build:webpack-dev": "webpack --progress --config webpack.dev.js",
+    "build:webpack-sourcemap": "webpack --progress --config webpack.sourcemap.js",
+    "start": "webpack-dev-server --progress --config webpack.dev.js",
+    "start:local": "webpack-dev-server --progress --config webpack.local.js"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "files": [
+    "build/dist/src",
+    "build/ExtendedTransposeCalculator.min.js",
+    "AUTHORS",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ammatwain/ExtendedTransposeCalculator"
+  },
+  "keywords": [
+    "transpose",
+    "sheet",
+    "music",
+    "vexflow",
+    "musicxml"
+  ],
+  "author": "Amedeo Sorpreso",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ammatwain/ExtendedTransposeCalculator/issues"
+  },
+  "homepage": "https://github.com/ammatwain/ExtendedTransposeCalculator",
+  "dependencies": {
+    "opensheetmusicdisplay": "^1.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "chai": "^4.3.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsdoc": "^46.4.5",
+    "eslint-plugin-no-null": "^1.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ncp": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "pre-commit": "^1.2.2",
+    "ts-loader": "^9.2.6",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-visualizer-plugin2": "^1.0.0"
+  },
+  "config": {}
+}
