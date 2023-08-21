@@ -78,6 +78,7 @@ export class ExtendedTransposeCalculator implements ETCITransposeCalculator {
     }
 
     public transposePitch(pitch: Pitch, currentKeyInstruction: KeyInstruction, halftones: number): Pitch {
+        halftones = Math.trunc(halftones);
         if (this.Options.TransposeByKeyRelation) {
             halftones = ETC.recoverTransposedKey(this.MainKey, halftones);
         }
@@ -136,6 +137,7 @@ export class ExtendedTransposeCalculator implements ETCITransposeCalculator {
     }
 
     public transposeKey(keyInstruction: KeyInstruction, transpose: number): void {
+        transpose = Math.trunc(transpose);
         if (this.Options.TransposeByKeyRelation) {
             transpose = ETC.recoverTransposedKey(this.MainKey, transpose);
         }

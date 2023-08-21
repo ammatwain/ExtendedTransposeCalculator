@@ -34,7 +34,7 @@ export class TransposeOptions {
     // A "dirty workaround" to bypass OSMD's inaction when Sheet.Transpose === 0.
     // If we remove the condition "transposeHalftones !== 0" from the function
     // "createGraphicalMeasure" in the file MusicSheetCalculator.ts, this workaround is not needed.
-    /*
+
     private static calculatePrecision(): number {
         let precision: number = 1;
         let value: number = 1;
@@ -44,8 +44,9 @@ export class TransposeOptions {
         }
         return precision;
     }
+
     private static precision: number = this.calculatePrecision();
-    */
+
     private static transposeByHalftone: number = 0;
     private static transposeByDiatonic: number = 1;
     private static transposeByInterval: number = 2;
@@ -69,10 +70,9 @@ export class TransposeOptions {
         // A "dirty workaround" to bypass OSMD's inaction when Sheet.Transpose === 0.
         // If we remove the condition "transposeHalftones !== 0" from the function
         // "createGraphicalMeasure" in the file MusicSheetCalculator.ts, this workaround is not needed.
-        /*
-         this.osmd.Sheet.Transpose = TransposeOptions.precision + value;
-        */
-        this.osmd.Sheet.Transpose = value;
+
+        this.osmd.Sheet.Transpose = TransposeOptions.precision + value;
+//        this.osmd.Sheet.Transpose = value;
     }
 
     constructor(osmd: OpenSheetMusicDisplay = undefined){
