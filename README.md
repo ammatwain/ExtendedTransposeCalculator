@@ -1,0 +1,2 @@
+# ExtendedTransposeCalculator
+Extended Transpose Calculator plugin for OpenSheetMusicDisplay
