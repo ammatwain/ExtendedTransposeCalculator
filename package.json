@@ -4,6 +4,18 @@
     "description": "Extended Transpose Calculator Plugin for OpenSheetMusicDisplay",
     "main": "dist/ExtendedTransposeCalculator.min.js",
     "types": "dist/src/index.d.ts",
+    "exports": {
+      ".": {
+        "require": {
+          "types": "./dist/src/index.d.ts",
+          "default": "./dist/ExtendedTransposeCalculator.min.js.js"
+        },
+        "import": {
+          "types": "./dist/src/index.d.ts",
+          "default": "./dist/ExtendedTransposeCalculator.min.js.js"
+        }
+      }
+    },
     "scripts": {
         "docs": "typedoc --out ./build/docs --name ExtendedTransposeCalculator ./src",
         "eslint": "eslint -c .eslintrc.js --ext .ts .",
