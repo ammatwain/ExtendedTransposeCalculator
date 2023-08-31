@@ -1,6 +1,6 @@
 {
     "name": "extended-transpose-calculator",
-    "version": "0.2.19",
+    "version": "0.2.20",
     "description": "Extended Transpose Calculator Plugin for OpenSheetMusicDisplay",
     "main": "build/ExtendedTransposeCalculator.min.js",
     "types": "build/dist/src/index.d.ts",
