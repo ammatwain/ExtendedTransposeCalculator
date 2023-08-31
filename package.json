@@ -1,20 +1,20 @@
 {
     "name": "extended-transpose-calculator",
-    "version": "0.2.26",
+    "version": "0.2.27",
     "description": "Extended Transpose Calculator Plugin for OpenSheetMusicDisplay",
     "main": "dist/ExtendedTransposeCalculator.min.js",
     "types": "dist/src/index.d.ts",
     "exports": {
-      ".": {
-        "require": {
-          "types": "./dist/src/index.d.ts",
-          "default": "./dist/ExtendedTransposeCalculator.min.js.js"
-        },
-        "import": {
-          "types": "./dist/src/index.d.ts",
-          "default": "./dist/ExtendedTransposeCalculator.min.js.js"
+        ".": {
+            "require": {
+                "types": "./dist/src/index.d.ts",
+                "default": "./dist/ExtendedTransposeCalculator.min.js.js"
+            },
+            "import": {
+                "types": "./dist/src/index.d.ts",
+                "default": "./dist/ExtendedTransposeCalculator.min.js.js"
+            }
         }
-      }
     },
     "scripts": {
         "docs": "typedoc --out ./build/docs --name ExtendedTransposeCalculator ./src",
@@ -35,10 +35,10 @@
         "lint"
     ],
     "files": [
-        "build/dist/src",
-        "build/ExtendedTransposeCalculator.min.js",
+        "dist/dist/src",
+        "dist/ExtendedTransposeCalculator.min.js",
         "AUTHORS",
-        "CHANGELOG.md",
+        "LICENSE",
         "README.md"
     ],
     "repository": {
