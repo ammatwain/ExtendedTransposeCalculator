@@ -9,13 +9,13 @@ import {
 import { ETC, ETCPitch } from "./ETC";
 import { TransposeOptions } from "./TransposeOptions";
 
-export interface ETCITransposeCalculator extends ITransposeCalculator {
+export interface IExtendedTransposeCalculator extends ITransposeCalculator {
     Options?: TransposeOptions;
     transposePitch(pitch: Pitch, currentKeyInstruction: KeyInstruction, halftones: number): Pitch;
     transposeKey(keyInstruction: KeyInstruction, transpose: number): void;
 }
 
-export class ExtendedTransposeCalculator implements ETCITransposeCalculator {
+export class ExtendedTransposeCalculator implements IExtendedTransposeCalculator {
     private osmd: OpenSheetMusicDisplay = undefined;
     public Options: TransposeOptions = undefined;
 
