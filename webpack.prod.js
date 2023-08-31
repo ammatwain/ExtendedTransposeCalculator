@@ -8,7 +8,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = merge(common, {
     output: {
         filename: '[name].min.js',
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dist'),
         library: 'ExtendedTransposeCalculator',
         libraryTarget: 'umd'
     },

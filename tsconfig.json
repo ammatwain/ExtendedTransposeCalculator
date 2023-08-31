@@ -5,7 +5,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noUnusedLocals": true,
-    "outDir": "build/dist",
+    "outDir": "dist",
     "declaration": true,
     "sourceMap": true,
     "resolveJsonModule": true,
