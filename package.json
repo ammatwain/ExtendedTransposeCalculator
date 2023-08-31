@@ -35,7 +35,7 @@
         "lint"
     ],
     "files": [
-        "dist/dist/src",
+        "dist/src",
         "dist/ExtendedTransposeCalculator.min.js",
         "AUTHORS",
         "LICENSE",
