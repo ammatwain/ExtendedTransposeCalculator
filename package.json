@@ -1,6 +1,6 @@
 {
     "name": "extended-transpose-calculator",
-    "version": "0.2.27",
+    "version": "0.2.32",
     "description": "Extended Transpose Calculator Plugin for OpenSheetMusicDisplay",
     "main": "dist/ExtendedTransposeCalculator.min.js",
     "types": "dist/src/index.d.ts",
@@ -58,14 +58,11 @@
         "url": "https://github.com/ammatwain/ExtendedTransposeCalculator/issues"
     },
     "homepage": "https://github.com/ammatwain/ExtendedTransposeCalculator",
-    "dependencies": {
-        "auto-version-js": "^0.3.10",
-        "opensheetmusicdisplay": "^1.8.3"
-    },
     "devDependencies": {
         "@types/node": "*",
         "@typescript-eslint/eslint-plugin": "^5.5.0",
         "@typescript-eslint/parser": "^5.5.0",
+        "auto-version-js": "^0.3.10",
         "chai": "^4.3.4",
         "clean-webpack-plugin": "^4.0.0",
         "copy-webpack-plugin": "^11.0.0",
@@ -88,5 +85,8 @@
         "webpack-merge": "^5.8.0",
         "webpack-visualizer-plugin2": "^1.0.0"
     },
-    "config": {}
+    "config": {},
+    "dependencies": {
+        "opensheetmusicdisplay": "^1.8.4"
+    }
 }
