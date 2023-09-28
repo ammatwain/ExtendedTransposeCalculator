@@ -43,7 +43,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/ammatwain/ExtendedTransposeCalculator"
+        "url": "git+https://github.com/ammatwain/ExtendedTransposeCalculator.git"
     },
     "keywords": [
         "transpose",
