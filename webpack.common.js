@@ -60,4 +60,7 @@ module.exports = {
         port: 8000,
         compress: false
     },
+    externals: {
+        opensheetmusicdisplay : 'opensheetmusicdisplay',
+    }
 }
