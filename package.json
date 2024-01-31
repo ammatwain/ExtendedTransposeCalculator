@@ -87,6 +87,7 @@
     },
     "config": {},
     "dependencies": {
+        "npm-check-updates": "^16.14.14",
         "opensheetmusicdisplay": "^1.8.4"
     }
 }
